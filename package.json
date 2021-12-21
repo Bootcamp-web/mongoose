@@ -1,0 +1,32 @@
+{
+  "name": "mongoose",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Bootcamp-web/mongoose.git",
+  "author": "Patricia Carrasco <patri.carrasco@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "fastify": "^3.25.1",
+    "fastify-formbody": "^5.2.0",
+    "fastify-static": "^4.5.0",
+    "handlebars": "^4.7.7",
+    "mongoose": "^6.1.2",
+    "pino": "^7.6.0",
+    "pino-pretty": "^7.3.0",
+    "point-of-view": "^4.16.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "seed": "ts-node-dev src/seed.ts",
+    "dev": "ts-node-dev src/server.ts"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "eslint": "^8.5.0",
+    "eslint-plugin-vue": "^8.2.0"
+  }
+}

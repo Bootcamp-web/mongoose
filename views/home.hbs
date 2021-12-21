@@ -1,0 +1,29 @@
+<h1>{{title}}</h1>
+<section>
+	<ul>
+		{{#each cats}}
+			{{#with this}}
+				<li>Mi gato se llama
+					<b>{{name}}</b>
+					de color
+					{{color}}
+					y pesa
+					{{peso}}
+					kg</li>
+			{{/with}}
+		{{/each}}
+	</ul>
+</section>
+
+<section>
+	<form action="/add/form" method="POST">
+		<p>Name:</p>
+		<input name="name" />
+		<p>Color</p>
+		<input name="color" />
+		<p>Peso</p>
+		<input name="peso" />
+		<p></p>
+		<button type="submit">Añadir</button>
+	</form>
+</section>
